@@ -1,0 +1,14 @@
+x_200=zeros(8000,1);
+x_200(1:40:8000)=ones(200,1);
+sound(x_200);
+pause(2);
+x_300=zeros(8000,1);
+x_300(1:27:8000)=ones(297,1);
+sound(x_300);
+figure
+subplot(2,1,1)
+plot(x_200(1:500))
+title('200Hz样值串')
+subplot(2,1,2)
+plot(x_300(1:500))
+title('300Hz样值串')
